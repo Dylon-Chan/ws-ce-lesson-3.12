@@ -10,6 +10,7 @@ jobs:
       with:
         node-version: 18
     - run: npm install
+    - run: npm test
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
